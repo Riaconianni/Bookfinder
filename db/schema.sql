@@ -1,14 +1,13 @@
-DROP DATABASE IF EXISTS book_list;
+DROP DATABASE IF EXISTS booklist_db;
 
-CREATE DATABASE book_list;
+CREATE DATABASE book_list_db;
 
-USE book_list;
+USE book_list_db;
 
 
 CREATE TABLE book_list(
   id INTEGER(20) AUTO_INCREMENT NOT NULL,
   title VARCHAR(100),
-  read BOOLEAN DEFAULT false NOT NULL,
   PRIMARY KEY (id)
 );
 
@@ -20,7 +19,6 @@ CREATE TABLE authors(
   PRIMARY KEY (id)
 );
 
-
 INSERT INTO book_list
 (book_name)
 VALUES
@@ -29,15 +27,13 @@ VALUES
 ("War and Peace"),
 ("The Great Gatsby")
 
-
-INSERT INTO authors(
   INSERT INTO authors 
-  (firstName, lastName) 
-  values
+  (firstName, lastName)
+  VALUES
    ("Kurt", "Vonnegut"),
    ("Leo","Tolstoy"),
    ("Leo","Tolstoy"),
    ("Scott","Fitzgerald")
-)
+
 SELECT * FROM book_list;
 SELECT * FROM authors;
