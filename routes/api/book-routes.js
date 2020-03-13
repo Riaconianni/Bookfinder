@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const {Books, User} = require('../../models');
+const Books = require('../../models/book');
 
 
 //get books from DB

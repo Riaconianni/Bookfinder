@@ -1,9 +1,15 @@
-DROP DATABASE IF EXISTS booklist_db;
+DROP DATABASE IF EXISTS books_db;
 
-CREATE DATABASE book_list_db;
+CREATE DATABASE books_db;
 
-USE book_list_db;
+/* USE books_db; */
 
+/* CREATE TABLE user(
+  id INTEGER(20) AUTO_INCREMENT NOT NULL,
+  firstname VARCHAR(10),
+  lastname VARCHAR (10),
+  PRIMARY KEY (id)
+); 
 
 CREATE TABLE book_list(
   id INTEGER(20) AUTO_INCREMENT NOT NULL,
@@ -18,6 +24,11 @@ CREATE TABLE authors(
   lastName VARCHAR(100),
   PRIMARY KEY (id)
 );
+
+INSERT INTO user
+(user_name)
+VALUES
+(firstname, lastname)
 
 INSERT INTO book_list
 (book_name)
@@ -37,3 +48,4 @@ VALUES
 
 SELECT * FROM book_list;
 SELECT * FROM authors;
+ */

@@ -1,14 +1,14 @@
+// Dependencies
 const Sequelize = require('sequelize');
 
-require('dotenv').config();
-
-// create connection to our db
+// Creates mySQL connection using Sequelize, the empty string in the third argument spot is our password.
 const sequelize = process.env.JAWSDB_URL
   ? new Sequelize(process.env.JAWSDB_URL)
-  : new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PW, {
+  : new Sequelize('book_list', 'root', 'lilikog', {
       host: 'localhost',
-      dialect: 'mysql',
-      port: 3306
+      port: 3306,
+      dialect: 'mysql'
     });
 
+// Exports the connection for other files to use
 module.exports = sequelize;
