@@ -51,7 +51,7 @@ router.put('/:id', (req, res) => {
 
 // deleting books
 router.delete('/:id', (req, res) => {
-    Books.destroty({
+    Books.destroy({
         where: {
             id: req.params.id
         }
