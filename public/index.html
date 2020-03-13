@@ -11,13 +11,25 @@
 </head>
 
 <body>
-  <img src="/assets/img/books.jpg" alt="books">
-  <div class="container">
-    <div style="margin-top: 80px;" class="jumbotron text-center">
-      <h1 class="display-5">Welcome to Book List <span role="img" aria-label="Memo"></span></h1>
-      <h4 class="mt-4">Please verify you username and password</h4>
+  <div class="container"> 
+    <img src="/assets/img/books.jpg"  alt="books" >
+    <div style="margin-top: 80px;" class="jumbotron text-center"> 
+    <!--   <h1 class="display-5">Welcome to Book List <span role="img" aria-label="Memo"></span></h1>
+      <h4 class="mt-4">Please verify you username and password</h4> -->
+      <div class="row">
+        <div class="col-9 col-md-3">
+       <div class="form-group">
+         <label for="usr">user</label>
+         <input type="text" class="form-control" id="usr" name="username">
+       <div class="form-group text-center">
+         <label for="pwd">password</label>
+         <input type="email" class="form-control" id="pwd" name="email">
+         <button type="submit" class="btn btn-primary  m-5">Submit</button>
+       </div>
+       </div>
     </div>
   </div>
+</img>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   
 </body>

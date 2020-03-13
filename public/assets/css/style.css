@@ -1,4 +1,6 @@
-body{
-  background-image:url("assets/img/books.jpg");
-
-}
+ 
+  .container {
+    /* The image used */
+    background-image: url("public/assets/img/books.jpg");
+    width: 70px;
+  }

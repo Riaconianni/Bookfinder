@@ -35,7 +35,7 @@ Book.sync({
       individualHooks: true
     })
     .then(res => {
-      console.log('books created!');
+      console.log('book created!');
       console.log(res);
       process.exit(1);
     })

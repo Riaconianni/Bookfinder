@@ -1,8 +1,7 @@
 const User = require('../models/User');
 
 const userdata = [{
-  name: 'Lili Gugushvili',
-  email: 'lilikog@yahoo.com',
+  username: 'Liliko',
   password: '12345'
 }, ];
 
@@ -13,7 +12,7 @@ User.sync({
       individualHooks: true
     })
     .then(res => {
-      console.log('Users created!');
+      console.log('User created!');
       console.log(res);
       process.exit(1);
     })
