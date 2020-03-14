@@ -1,4 +1,6 @@
-/* const { Model, DataTypes } = require('sequelize');
+const { Model, DataTypes } = require('sequelize');
+
+//create your table/model
 const sequelize = require('../config/connection');
 
 class Book extends Model {}
@@ -13,12 +15,11 @@ Book.init(
     },
     description: {
       type: DataTypes.STRING
-    },
-  bookId:
+    }
   },
   {
     sequelize
   }
 );
 
-module.exports = Book; */
+module.exports = Book; 
