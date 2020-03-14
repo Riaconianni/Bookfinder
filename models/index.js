@@ -1,6 +1,6 @@
 // import other models
-const Post = require('./book');
+const Books = require('./books');
 const User = require('./User');
 
 
-module.exports = { Post, User };
+module.exports = { Books, User };
