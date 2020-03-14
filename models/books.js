@@ -18,7 +18,8 @@ Books.init(
     }
   },
   {
-    sequelize
+    sequelize, 
+    timestamps: false
   }
 );
 

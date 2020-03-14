@@ -1,5 +1,6 @@
 // Dependencies
 const Sequelize = require('sequelize');
+require('dotenv').config();
 
 //Creates mySQL connection using Sequelize, the empty string in the third argument spot is our password.
 const sequelize = process.env.JAWSDB_URL
