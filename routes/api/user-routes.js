@@ -1,7 +1,7 @@
 const router = require('express').Router();
 const User = require('../../models/User');
 
-const checkAuth = require('./checkAuth');
+const checkAuth = require('../../middleware/check-auth');
 
 //get general data
 router.get('/', checkAuth, (req, res) => {

@@ -1,6 +1,15 @@
 // import other models
-const Post = require('./book');
+const Books = require('./book');
 const User = require('./User');
 
+//Add sequelize hasmany and belongsto
+// connect (associate) models
+User.hasMany(Books, {
+  onDelete: 'CASCADE'
+});
 
-module.exports = { Post, User };
+// this will create a column in Post table called 'UserId'
+Books.belongsTo(User);
+
+
+module.exports = { Books, User };
