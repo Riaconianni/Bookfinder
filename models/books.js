@@ -3,9 +3,9 @@ const { Model, DataTypes } = require('sequelize');
 //create your table/model
 const sequelize = require('../config/connection');
 
-class Book extends Model {}
+class Books extends Model {}
 
-Book.init(
+Books.init(
   {
     title: {
       type: DataTypes.STRING
@@ -14,7 +14,7 @@ Book.init(
       type: DataTypes.STRING
     },
     description: {
-      type: DataTypes.STRING
+      type: DataTypes.TEXT
     }
   },
   {
@@ -22,4 +22,4 @@ Book.init(
   }
 );
 
-module.exports = Book; 
+module.exports = Books; 
