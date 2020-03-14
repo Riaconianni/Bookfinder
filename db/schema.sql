@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS books_db;
+DROP DATABASE IF EXISTS book_list;
 
-CREATE DATABASE books_db;
+CREATE DATABASE book_list;
 
 /* USE books_db; */
 
