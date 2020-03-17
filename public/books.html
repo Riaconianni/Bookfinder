@@ -9,78 +9,31 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.1.3/flatly/bootstrap.min.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
     integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin`="anonymous">
-  <link rel="stylesheet" href="/assets/css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.min.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-dark bg-primary m-3">
-    <a class="navbar-brand" href="/">Book List</a>
-    <div class="icons">
-      <i class="fas fa-save text-light save-book"></i>
-      <i class="fas fa-pen text-light delete-book"></i>
+  <div class="block">
+    <span class="tag is-success">
+      Hello World
+      <button class="delete is-small"></button>
+    </span>
+  </div>
+  
+  <div class="notification is-danger">
+    <button class="delete"></button>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit lorem ipsum dolor sit amet, consectetur adipiscing elit
+  </div>
+  
+  <article class="message is-info">
+    <div class="message-header">
+      Info
+      <button class="delete"></button>
     </div>
-  </nav> 
-  <!-- div class="container-fluid bg-danger">
-    <div class="row">
-      <div class="col-4 list-container">
-        <div class="card">
-          <ul class="list-group">
-          </ul>
-        </div>
-      </div> --> 
-      <!-- <div class="col-8">
-        <input class="note-title" placeholder="Favorite book list" maxlength="28" type="text">
-        <textarea class="book-textarea" placeholder="Add a book to read"></textarea>
-      </div>
-      <div class="col-8">
-        <input class="book-title" placeholder="Update the list" maxlength="28" type="text">
-        <textarea class="book-textarea" placeholder="Delete a book"></textarea>
-      </div>
-    </div> -->
-  <!-- </div> -->
-  <table class="table table-danger m-3">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Favourite Books</th>
-        <th scope="col">Add a Book</th>
-        <th scope="col">Deleted Books</th>
-        <th scope="col">#</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>book name</td>
-        <td>book name</td>
-        <td>book name</td>
-        <td>book name</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>book name</td>
-        <td>book name</td>
-        <td>book name</td>
-        <td>book name</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>book name</td>
-        <td>book name</td>
-        <td>book name</td>
-        <td>book name</td>
-
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td>book name</td>
-        <td>book name</td>
-        <td>book name</td>
-        <td>book name</td>
-      </tr>
-    </tbody>
-  </table>
-
+    <div class="message-body">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque risus mi, tempus quis placerat ut, porta nec nulla. Vestibulum rhoncus ac ex sit amet fringilla. Nullam gravida purus diam, et dictum felis venenatis efficitur. Aenean ac eleifend lacus, in mollis lectus. Donec sodales, arcu et sollicitudin porttitor, tortor urna tempor ligula, id porttitor mi magna a neque. Donec dui urna, vehicula et sem eget, facilisis sodales sem.
+    </div>
+  </article>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="/assets/js/index.js"></script>
 </body>
