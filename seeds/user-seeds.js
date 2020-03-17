@@ -1,9 +1,13 @@
 const User = require('../models/User');
 
 const userdata = [{
-  username: 'Liliko',
+  username: 'Liliko@gmail.com',
   password: '12345'
-}, ];
+},
+{
+  username: 'iaconiannir@gmail.com',
+  password: '12345'
+} ];
 
 User.sync({
   force: true
