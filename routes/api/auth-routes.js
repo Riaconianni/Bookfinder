@@ -8,7 +8,7 @@ router.post('/', (req, res) => {
   // retrieve user from db by email
   User.findOne({
     where: {
-      email: req.body.email
+      username: req.body.username
     }
   }).then(user => {
     // if no user found, let user know
@@ -29,8 +29,7 @@ router.post('/', (req, res) => {
       const token = jwt.sign({
           exp: Math.floor(Date.now() / 1000) + 60 * 60,
           data: {
-            name: user.name,
-            email: user.email,
+            username: user.username,
             id: user.id
           }
         },
