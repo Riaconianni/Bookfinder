@@ -19,71 +19,29 @@
       <i class="fas fa-save text-light save-book"></i>
       <i class="fas fa-pen text-light delete-book"></i>
     </div>
-  </nav> 
-  <!-- div class="container-fluid bg-danger">
-    <div class="row">
-      <div class="col-4 list-container">
-        <div class="card">
-          <ul class="list-group">
-          </ul>
-        </div>
-      </div> --> 
-      <!-- <div class="col-8">
-        <input class="note-title" placeholder="Favorite book list" maxlength="28" type="text">
-        <textarea class="book-textarea" placeholder="Add a book to read"></textarea>
-      </div>
-      <div class="col-8">
-        <input class="book-title" placeholder="Update the list" maxlength="28" type="text">
-        <textarea class="book-textarea" placeholder="Delete a book"></textarea>
-      </div>
-    </div> -->
-  <!-- </div> -->
-  <table class="table table-danger m-3">
-    <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">Favourite Books</th>
-        <th scope="col">Add a Book</th>
-        <th scope="col">Deleted Books</th>
-        <th scope="col">#</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>book name</td>
-        <td>book name</td>
-        <td>book name</td>
-        <td>book name</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>book name</td>
-        <td>book name</td>
-        <td>book name</td>
-        <td>book name</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>book name</td>
-        <td>book name</td>
-        <td>book name</td>
-        <td>book name</td>
+  </nav>
 
-      </tr>
-      <tr>
-        <th scope="row">4</th>
-        <td>book name</td>
-        <td>book name</td>
-        <td>book name</td>
-        <td>book name</td>
-      </tr>
-    </tbody>
-  </table>
+  <div class="container">
+    <div class="row">
+      <div class="col-12" id="listCol">
+        <ul class="list-group" id="booksList"></ul>
+      </div>
+
+      <div id="bookCol" class="col-12 col-sm-6" style="display: none;">
+        <div class="card" id="bookCard">
+          <div class="card-header" id="bookHeader">Header</div>
+          <div class="card-body">
+            <p id="bookDesc"></p>
+          </div>
+          <div class="card-footer">Footer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="/assets/js/script.js"></script>
+  <script src="/assets/js/books.js"></script>
 </body>
 
 </html>
-

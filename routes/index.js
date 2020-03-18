@@ -11,10 +11,6 @@ router.get("/books", function(req, res) {
     res.sendFile(path.join(__dirname, "../public/books.html"));
 });
 
-router.get("/", function(req, res) {
-    res.sendFile(path.join(__dirname, "../public/index.html"));
-});
-
 router.get("*", function(req, res) {
     res.send("Error 404: YOU MESSED UP!")
 });
