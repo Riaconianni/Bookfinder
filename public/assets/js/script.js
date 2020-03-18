@@ -8,7 +8,7 @@ $("#submitButton").on("click", function(event){
     console.log(user, password)
 
     let dataObject = {
-        email: user,
+        username: user,
         password: password
     }
 
@@ -20,7 +20,8 @@ $("#submitButton").on("click", function(event){
             method: "POST",
             data: dataObject
         }).then(function(res){
-            console.log(res.message)
+            console.log(res)
+            localStorage.setItem("token", res)
             //if statement
             //test to see if it was successful, if you get the token
             //redirect them to books page?
