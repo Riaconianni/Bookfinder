@@ -1,4 +1,4 @@
-$("#submitButton").on("click", function(event){
+$("#submitButton").on("click", function (event) {
     event.preventDefault();
     console.log("hi")
 
@@ -12,14 +12,14 @@ $("#submitButton").on("click", function(event){
         password: password
     }
 
-    if(user === "" || password === ""){
+    if (user === "" || password === "") {
         alert("must fill out fields")
     } else {
         $.ajax({
             url: "/api/auth",
             method: "POST",
             data: dataObject
-        }).then(function(res){
+        }).then(function (res) {
             console.log(res)
             localStorage.setItem("token", res)
             //if statement
