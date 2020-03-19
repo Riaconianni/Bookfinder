@@ -11,6 +11,5 @@ router.use('/books', bookRoutes);
 router.use('/users', userRoutes);
 router.use('/auth', authRoutes);
 
-
 // export packaged routes
 module.exports = router;

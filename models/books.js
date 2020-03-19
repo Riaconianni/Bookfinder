@@ -18,9 +18,9 @@ Books.init(
     }
   },
   {
-    sequelize, 
+    sequelize,
     timestamps: false
   }
 );
 
-module.exports = Books; 
+module.exports = Books;
