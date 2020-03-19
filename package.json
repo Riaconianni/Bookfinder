@@ -7,8 +7,8 @@
     "start": "node server.js",
     "watch": "nodemon server.js",
     "test": "eslint",
-    "seeds": "node ./seeds/index.js",
-    "build": "npm run seed"
+    "seeds": "node ./seeds/seeds.js",
+    "heroku-postbuild": "npm run seeds"
   },
   "repository": {
     "type": "git",

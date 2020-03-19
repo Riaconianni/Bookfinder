@@ -35,8 +35,8 @@ const checkAuth = (req, res, next) => {
       return;
     }
     // send them on their way but set email and id values to request
-    req.username = decoded.username;
-    req.id = decoded.id;
+    req.username = decoded.data.username;
+    req.id = decoded.data.id;
     next();
   });
 };
