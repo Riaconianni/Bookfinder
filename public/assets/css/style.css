@@ -5,5 +5,23 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+  background-color: grey;
+  background-blend-mode: multiply;
 }
+
+h1{
+  color: aqua;
+  font-size: 75px;
+  font-family: 'IBM Plex Serif', serif;
+}
+label{
+    color: aqua;
+    background-color: ;
+    font-family: 'IBM Plex Serif', serif;
+}
+/* .books{
+ background-color: black;
+ color: white;
+  
+} */
 
