@@ -13,6 +13,11 @@ const makeSeeds = async () => {
       username: 'iaconiannir@gmail.com',
       password: '12345'
     }
+    {
+      name: 'Evan',
+      username: "evanstein28@gmail.com",
+      password: '12345'
+    }
   ];
 
   await sequelize.sync({ force: true });
